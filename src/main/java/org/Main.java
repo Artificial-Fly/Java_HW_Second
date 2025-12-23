@@ -1,6 +1,7 @@
 package org;
 
 import java.util.Scanner;
+import ru.netology.service.CustomService;
 
 public class Main {
 
@@ -10,7 +11,7 @@ public class Main {
         double price = scanner.nextDouble();
         System.out.print("Введите вес товара (кг): ");
         int weight = scanner.nextInt();
-        double custom = ru.netology.service.CustomService.CalcCustoms(price, weight);
+        double custom = CustomService.CalcCustoms(price, weight);
         System.out.println("Пошлина составит: " + custom);
     }
 }
